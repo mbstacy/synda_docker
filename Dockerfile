@@ -1,4 +1,4 @@
-FROM ubuntu 
+FROM phusion/baseimage
 #This needs to be cleaned up but works for now. Think need to use 'FROM python:2.7' with no virtualenv and install in base python. #python:2.7-onbuild
 MAINTAINER Mark Stacy <markstacy@ou.edu>
 
