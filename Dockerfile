@@ -8,8 +8,8 @@ RUN apt-get  --force-yes -y install gcc python python-pip python-dev libssl-dev 
 #RUN wget -O /install.sh https://raw.githubusercontent.com/Prodiguer/synda/master/sdc/install.sh
 #Customize install.sh to remove spinner and redirect to screen instead of log_file. Plus changed g__prefix=/
 ADD src/install.sh /install.sh
-RUN chmod +x /install.sh
 
+ENV TERM xterm
 ENV ST_HOME /sdt
 ENV PATH $ST_HOME/bin:$PATH
 
